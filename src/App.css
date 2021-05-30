@@ -1,38 +1,322 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap');
+
+.App:not(.react-brand) {
+  min-height: 100vh;
+  justify-content: space-between;
+  font-family: 'Noto Serif', serif;
+}
+
+.navbar-brand {
+  font-family: 'Pattaya', sans-serif;
+  font-size: 30px !important;
+}
+
+.header-brand {
+  text-shadow: 2px 0 white, 0 1px white, 0 0 white, 0 0px white;
+  transition: color 0.15s ease-in-out, text-shadow 0.15s ease-in-out;
+}
+
+.header-brand:hover {
+  color: white !important;
+  text-shadow: -2px 0 black, 0 -1px black, 0 0 black, 0 0px black;
+}
+
+.navbar {
+  background-color: rgb(252, 161, 3);
+}
+
+.footer-link {
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.footer-link:hover {
+  color: rgb(252, 161, 3) !important;
+}
+
+.footer-column-heading {
+  border-bottom: 3px outset white;
+}
+
+ul.my-search-options {
+  width: 100%;
+}
+
+.my-dropdown-search-item {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  text-decoration: none;
+  background-color: transparent;
+  border: 0;
+}
+
+.nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.068);
+}
+
+.nav-link {
+  text-decoration: none !important;
+}
+
+.my-dropdown-search-item:hover {
+  background-color: rgba(0, 0, 0, 0.068);
+  color: #212529;
+  cursor: pointer;
+}
+
+.my-dropdown-search-item:focus {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.dropdown-menu a:focus,
+.dropdown-item:focus {
+  background-color: black;
+}
+
+a.my-dropdown-search-item {
+  white-space: normal !important;
+}
+
+
+a.my-dropdown-search-item:focus {
+  background-color: black !important;
+}
+
+.my-search-bar {
+  justify-self: flex-end;
+}
+
+.my-card {
+  transition: all 0.2s ease-in-out;
+}
+
+.my-card:hover {
+  transform: scale(1.02);
+}
+
+.my-card .card-body {
+  grid-template-rows: min-content min-content auto min-content;
+}
+
+.stretchable {
+  position: relative;
+}
+
+.semi-stretchable-holder {
+  grid-template-columns: auto 1fr;
+}
+
+.none-found-message {
+  width: fit-content;
+}
+
+.portions-select {
+  width: 30% !important;
+}
+
+@media (min-width: 1200px) {
+  .meal-container{
+      max-width: 1000px !important;
+  }
+}
+
+
+.carousel-item {
+  position: relative;
+  background: black;
+  color: white;
+  height: 250px;
+}
+
+.my-carousel-background-image {
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left:0;
+  right: 0;
+  opacity: 0.35;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-item .container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@media (min-width: 450px) {
+  .carousel-item {
+    height: 300px;
+  };
+}
+
+@media (min-width: 550px) {
+  .carousel-item {
+    height: 400px;
+  };
+}
+
+@media (min-width: 800px) {
+  .carousel-item {
+    height: 500px;
+  };
+}
+
+@media (min-width: 1100px) {
+  .carousel-item {
+    height: 600px;
+  };
+}
+
+.my-accordion .accordion-body {
+  display: flex;
+  flex-flow: column;
+}
+
+.my-alert {
+  position: absolute !important;
+}
+
+.my-loading {
+  z-index: 1;
+  opacity: 0.7;
+}
+
+.my-preview-loading {
+  z-index: 1;
+  background: white;
+  opacity: 0.6;
+}
+
+.my-loading-caption {
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  30% {
+    opacity: 0;
+  }
+}
+
+.my-loading-spinner {
+  width: 4rem !important; 
+  height: 4rem !important;
+}
+
+.my-search-loading-spinner {
+  margin-right: 120px !important;
+  opacity: 0.6;
+}
+
+.footer-logo {
+  position: relative;
+}
+
+.footer-logo::before {
+  position: absolute;
+  content: '@';
+  font-size: x-small;
+  top: 8px !important;
+  left: -9px !important;
+}
+.about-api {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.footer-heading {
+  width: fit-content;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.footer a {
+  color: aliceblue;
+  text-decoration: dotted;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.category-description {
+  --lh: 1.4rem;
+  --max-lines: 3;
+  position: relative;
+  text-align: justify;
+  height: calc(var(--lh) * var(--max-lines));
+  overflow: hidden;
 }
 
-.App-link {
+.category-description::after {
+  position: absolute;
+  content: "...";
+  bottom: -0.4rem;
+  right: 0;
+}
+
+.category-description::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 1rem;
+  height: 1rem;
+  background: white;
+}
+
+.my-category-card {
+  transition: all 0.2s ease-in-out;
+}
+
+.my-category-card:hover {
+  transform: scale(1.02);
+}
+
+.my-country-card {
+  height: 100%;
+}
+
+/* .accordion-button:not(.collapsed) {
+  background-color: rgba(252, 161, 3, 0.144) !important;
+  color: black !important;
+} */
+
+.react-brand {
   color: #61dafb;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  font-weight: 700;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bootstrap-brand {
+  color: #6610f2;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.ingredients-expand {
+  padding: 3px;
+  background-color: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: calc(0.25rem - 1px);
+  text-decoration: none;
+  color: black;
+}
+
+.ingredients-expand:hover {
+  background-color: rgba(0, 0, 0, 0.082);
+  color: black;
+}
+
+.form-select:hover {
+  cursor: pointer;
+}
+
+.form-select option:hover {
+  cursor: pointer;
 }
