@@ -19,3 +19,9 @@ App is build on [React](https://reactjs.org/) using React-hooks functional compo
 
 
 [Fraction.js](https://github.com/infusion/Fraction.js/) library is used to operate on fractions while counting ingredients amounts.
+
+All HTTP-request are made using [AxiosJS](https://github.com/axios/axios);
+
+### API used
+
+[TheMealDB](https://www.themealdb.com/) is used to get recepies. Requests are made with developer test-only key '1'.
