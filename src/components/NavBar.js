@@ -66,7 +66,7 @@ function NavBar() {
                     <input className="form-control me-2 dropdown-toggle" type="search"
                     placeholder="Search for meal" aria-label="Search" 
                     value={searchingFor}
-                    onChange={(event) => handleChange(event)}
+                    onChange={(event) => {handleChange(event);}}
                     onFocus={(event) => handleChange(event)}
                     > 
                     </input>

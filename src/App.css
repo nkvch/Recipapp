@@ -320,3 +320,13 @@ a.my-dropdown-search-item:focus {
 .form-select option:hover {
   cursor: pointer;
 }
+
+.bootstrap-brand {
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+}
+
+.react-column {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
