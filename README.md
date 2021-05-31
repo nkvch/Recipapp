@@ -2,6 +2,8 @@
 
 ![](./src/images/m.png)
 
+App is deployed to Heroku: [https://agile-dusk-75413.herokuapp.com/](https://agile-dusk-75413.herokuapp.com/).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ### `npm start`
