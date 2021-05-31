@@ -251,21 +251,21 @@ a.my-dropdown-search-item:focus {
   overflow: hidden;
 }
 
-.category-description::after {
+/* .category-description::after {
   position: absolute;
   content: "...";
   bottom: -0.4rem;
   right: 0;
-}
+} */
 
 .category-description::before {
   content: "";
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 1rem;
+  width: 100%;
   height: 1rem;
-  background: white;
+  background-image: linear-gradient( rgba(255, 255, 255,0), rgb(255, 255, 255,1));
 }
 
 .my-category-card {
